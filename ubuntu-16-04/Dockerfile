@@ -9,7 +9,8 @@ RUN apt-get update \
 
 RUN apt-get install -y --no-install-recommends ccache flex bison clang-4.0 cmake g++ git patch zlib1g-dev autoconf xutils-dev libtool pkg-config libpciaccess-dev \
  && apt-get install -y clinfo \
- && apt-get install -y ca-certificates
+ && apt-get install -y ca-certificates \
+ && apt-get install -y python2.7 python-pip
 
 WORKDIR /tmp
 
