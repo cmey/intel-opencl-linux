@@ -8,7 +8,8 @@ RUN apt-get update \
  && apt-get dist-upgrade -y
 
 RUN apt-get install -y --no-install-recommends ccache flex bison clang-4.0 cmake g++ git patch zlib1g-dev autoconf xutils-dev libtool pkg-config libpciaccess-dev \
- && apt-get install -y clinfo
+ && apt-get install -y clinfo \
+ && apt-get install -y ca-certificates
 
 WORKDIR /tmp
 
