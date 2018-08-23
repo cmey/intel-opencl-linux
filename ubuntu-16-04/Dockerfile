@@ -27,7 +27,7 @@ RUN mkdir build \
 
 # Build
 WORKDIR /tmp/build
-RUN cmake -DBUILD_TYPE=Release -DCMAKE_BUILD_TYPE=Release ../neo
+RUN cmake -DBUILD_TYPE=Release -DCMAKE_BUILD_TYPE=Release -Wno-dev ../neo
 RUN make -j`nproc` package
 
 # Install Driver
