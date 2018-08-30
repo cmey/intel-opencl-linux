@@ -1,6 +1,7 @@
 FROM ubuntu:xenial-20180808
 MAINTAINER Christophe Meyer  "https://cmey.io"
 # Instructions compiled from https://github.com/intel/compute-runtime/blob/master/documentation/BUILD_Ubuntu.md
+# This builds Clang which requires 4GB RAM (more than the 2GB that Docker.app defaults to - update Docker settings!)
 
 ENV DEBIAN_FRONTEND=noninteractive
 
